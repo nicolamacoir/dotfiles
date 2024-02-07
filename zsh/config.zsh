@@ -23,7 +23,9 @@ setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
 
 setopt APPEND_HISTORY # adds history
-setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
+# setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
+unsetopt inc_append_history
+unsetopt share_history
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
@@ -37,3 +39,6 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+bindkey "^[[A" history-search-backward
+bindkey "^[[B" history-search-forward

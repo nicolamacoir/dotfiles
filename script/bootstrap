@@ -137,6 +137,15 @@ install_dotfiles () {
   done
 }
 
+install_xcode() {
+  info 'Started: Installing Xcode Command Line Tools...'
+  xcode-select --install
+  user 'After installtion is complete, press any key to continue'
+  read
+  success 'Finished: Installing Xcode Command Line Tools'
+}
+
+install_xcode
 setup_gitconfig
 install_dotfiles
 

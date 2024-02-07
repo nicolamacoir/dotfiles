@@ -16,7 +16,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = code --wait --new-window
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -31,10 +31,12 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+        autoSetupRemote = true
 [credential]
 	helper = osxkeychain
 [diff "spaceman-diff"]
   command = /opt/homebrew/bin/spaceman-diff
-
+[difftool "default-difftool"]
+   	cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [init]
 	defaultBranch = main

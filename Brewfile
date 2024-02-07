@@ -1,22 +1,44 @@
 cask_args appdir: '/Applications'
 
-tap 'homebrew/bundle'
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap 'derailed/k9s'
 
-brew 'imagemagick'
 brew 'spaceman-diff'
 brew 'spark'
-brew 'stripe/stripe-cli/stripe'
-brew 'wget'
-brew 'yt-dlp'
+brew "zsh"
 
-cask 'airtable'
-cask 'arq'
-cask 'handbrake'
-cask 'notion-calendar'
-cask 'plex'
-cask 'sonos'
-cask 'raycast'
-cask 'warp'
-cask 'visual-studio-code'
-cask 'vlc'
-cask 'zed'
+brew "azure-cli"
+brew "direnv"
+brew "jq"
+brew "wget"
+brew "kubernetes-cli"
+brew "nvm"
+brew "pyenv"
+brew "ugit"
+brew 'commitizen'
+brew 'git-delta'
+brew "derailed/k9s/k9s"
+brew "powerlevel10k"
+
+cask "iterm2"
+cask "fig"
+cask "rectangle"
+cask "maccy"
+cask "shottr"
+cask "google-chrome-canary"
+cask "spotify"
+cask "visual-studio-code"
+cask "notion"
+cask "notion-calendar"
+cask "docker"
+cask "microsoft-teams"
+cask "slack"
+cask "readdle-spark"
+cask "ngrok"
+cask "radiola"
+cask "swiftbar"
+cask "istat-menus"
+cask 'lens'

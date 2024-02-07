@@ -10,6 +10,8 @@ export PROJECTS=~/Code
 if [[ -a ~/.localrc ]]
 then
   source ~/.localrc
+else
+  echo "No ~/.localrc file found!"
 fi
 
 # all of our zsh files
