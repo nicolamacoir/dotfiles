@@ -1,0 +1,5 @@
+[user]
+        name = Nicola Macoir
+        email = nicola.macoir@rightcrowd.com
+[credential]
+        helper = osxkeychain

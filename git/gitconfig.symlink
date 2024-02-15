@@ -1,6 +1,11 @@
 # Local/private config goes in the include
-[include]
-        path = ~/.gitconfig.local
+## https://dev.to/fedekau/automatically-managing-personal-and-work-git-configurations-27ad
+[includeIf "gitdir:~/Code/Work"]
+    path = ~/.gitconfig.work
+
+[includeIf "gitdir:~/Code/Personal"]
+    path = ~/.gitconfig.personal
+
 [hub]
         protocol = https
 [alias]
@@ -16,7 +21,8 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = code --wait --new-window
+        editor = nano
+        pager = delta
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -36,7 +42,5 @@
 	helper = osxkeychain
 [diff "spaceman-diff"]
   command = /opt/homebrew/bin/spaceman-diff
-[difftool "default-difftool"]
-   	cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [init]
 	defaultBranch = main

@@ -1,28 +1,33 @@
 cask_args appdir: '/Applications'
 
+# Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap 'derailed/k9s'
 
-brew 'spaceman-diff'
-brew 'spark'
-brew "zsh"
-
-brew "azure-cli"
-brew "direnv"
+# Binaries
 brew "jq"
 brew "wget"
-brew "kubernetes-cli"
-brew "nvm"
-brew "pyenv"
+brew "htop"
+brew "tree"
 brew "ugit"
-brew 'commitizen'
+brew "thefuck"
+brew "direnv"
 brew 'git-delta'
-brew "derailed/k9s/k9s"
 brew "powerlevel10k"
 
+# Development
+brew "azure-cli"
+brew "nvm"
+brew "pyenv"
+brew "kubernetes-cli"
+brew "kubectx"
+brew "derailed/k9s/k9s"
+
+# Applications
+cask "appcleaner"
 cask "iterm2"
 cask "fig"
 cask "rectangle"
