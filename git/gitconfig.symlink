@@ -1,10 +1,11 @@
 # Local/private config goes in the include
 ## https://dev.to/fedekau/automatically-managing-personal-and-work-git-configurations-27ad
+[includeIf "gitdir:~/"]
+    path = ~/.gitconfig.personal
+
 [includeIf "gitdir:~/Code/Work/"]
     path = ~/.gitconfig.work
 
-[includeIf "gitdir:~/Code/Personal/"]
-    path = ~/.gitconfig.personal
 
 [hub]
         protocol = https
